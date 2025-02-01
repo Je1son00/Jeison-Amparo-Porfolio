@@ -6,10 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeison Amparo Dev 👨🏻‍💻 | Contacto</title>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../Css/whatsapp-button.css">
     <link rel="shortcut icon" href="../Img/ordenador-personal.png" type="image/x-icon">
 </head>
 
 <body>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=18296205524&text=Hola, me gustaria Obtener más información"
+        class="float pulse" target="_blank">
+        <i class="fa fa-whatsapp my-float "></i>
+    </a>
     <header>
         <nav>
             <div class="logo">
@@ -43,7 +49,7 @@
     <section class="contact-section">
         <div class="contact-container">
             <h2>Envíame un mensaje</h2>
-            <form action="mailto:tuemail@example.com" method="post" enctype="text/plain">
+            <form id="contact-form" action="https://formsubmit.co/jeisonamparoabreu@gmail.com" method="post">
                 <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -54,6 +60,9 @@
                 <textarea id="message" name="message" rows="5" required></textarea>
 
                 <button type="submit">Enviar</button>
+                <div id="form-message" class="hidden"></div>
+                <input type="hidden" name="_next" value="https://je1son00.github.io/Jeison-Amparo-Porfolio/pages/contacto.html">
+                <input type="hidden" name="_captcha" value="false">
             </form>
         </div>
     </section>
@@ -75,6 +84,7 @@
 
     <script src="../js/script.js"></script>
     <script src="../js/menu-toggle.js"></script>
+    <script src="../js/success-message.js"></script>
 </body>
 
 </html>
